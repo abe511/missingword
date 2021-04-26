@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>missing word</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+      
+    <main>
+      <div class="grid">
+        <div class="text-container"></div>
+        <div class="footer">
+          <span class="status"></span>
+        </div>
+        <button id="submit" class="button">SUBMIT</button>
+        <button id="edit" class="button">EDIT</button>
+        <div class="modal-background">
+          <div class="modal-container">
+              <textarea class="user-text" required placeholder="Paste your text here.&#10;Create a list using opening &quot;&lt;|&quot; and closing &quot;|&gt;&quot; flags around comma separated words, without spaces.&#10;For the first entry use the same amount of placeholder characters as in the longest word in the list.&#10Ex: this list includes &quot;&lt;|______,word 1,word 2,word 3|&gt;&quot;">
+              </textarea>
+          <button id="modal-cancel" class="button">CANCEL</button>
+          <button id="modal-save" class="button">SAVE</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
