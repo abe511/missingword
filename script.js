@@ -155,13 +155,8 @@ const insertElements= (wordlists) => {
   textarea.appendChild(textNode);
 };
 
-
 editButton.addEventListener("click", handleEdit);
 submitButton.addEventListener("click", handleSubmit);
-
-
-// window.addEventListener("click", handleWindowClick, true);
-// window.onclick = handleCancel;
 
 // cleanup
 window.onunload = (e) => {
