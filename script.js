@@ -23,18 +23,18 @@ const handleSubmit = (e) => {
   }
   let count = 0;
   let number = 0;
-  let result = "";
+  let result = [];
   // create word lists
   const wordlists = parseText(text);
   // check if all the word lists are filled
   selectNodesArray.forEach((word, index) => {
     if(word.value !== '0') {
       count++;
-      result += word.value;
+      result[index] = word.value;
     }
   });
   // convert the string with word indeces to base64
-  number = btoa(result);
+  number = btoa(result.toString());
   // if everything is filled in update the status with the base64 string
   if(count === selectNodesArray.length){
     status.innerHTML = `<p>Copy this text:</p><p style="color: red">${number}</p>`;
