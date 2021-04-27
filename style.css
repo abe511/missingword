@@ -41,10 +41,20 @@ select{
 
 button {
   font-size: var(--button-font-size);
+  border:1px solid #aaa;
   border-radius: 0.3em;
   margin: 0.5em;
   color: inherit;
   background-color: inherit;
+}
+
+button:hover {
+  border-color: rgb(0, 64, 255);
+  color: rgb(0, 64, 255);
+}
+
+button:active {
+  background-color: rgb(223, 227, 252);
 }
 
 .grid {
